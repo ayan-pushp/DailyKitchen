@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yummy - Food Ordering</title>
+  <title>Daily Kitchen - Home Meals</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
+    <a href="#" class="logo">
+        <div class="logo-icon">DK</div>
+    </a>
     <a class="navbar-brand" href="#" ><b>DAILY KITCHEN</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,71 +38,87 @@
 <!-- Hero Section -->
 <div class="container-fluid bg-light text-center py-5" style="background-image: url('bg.jpg'); background-size: cover; background-position: auto;">
   <div class="text-white" style="background: rgba(0, 0, 0, 0.5); padding: 40px;">
-    <h1>Daily Kitchen Homestyle Meals!</h1>
-    <p>A comfortable hug that feels like home</p>
-    <a href="#" class="btn bg-warning">Order Now</a>
+    <h1>Daily Kitchen Homestyle Meals</h1>
+    <p>A comfortable hug that feels like home!</p>
   </div>
 </div>
 
-<!-- Food Menu Section -->
-<div class="container my-5">
-  <h2 class="text-center mb-4">Order our Soulful Delights</h2>
-  <div class="row">
-    <!-- Food Item 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="chole.jpg" class="card-img-top" alt="Chole Chawal">
-        <div class="card-body text-center">
-          <h5 class="card-title">Punjabi Chole Chawal</h5>
-          <p class="card-text">Masaledar Chole + White Rice</p>
-          <p class="card-text"><strong>₹75</strong></p>
-          <button class="btn btn-warning">Add to Cart</button>
-          <p class="text-muted mt-2">★ 4.5</p>
+<!-- Food Grid Container -->
+<div class="food-grid">
+    <!-- Food Card 1 -->
+    <div class="food-card">
+        <img src="chole.jpg" alt="Chole Chawal">
+        <div class="food-card-body">
+            <h5 class="food-title">Punjabi Chole Chawal</h5>
+            <p class="food-details">Masaledar Chole + White Rice</p>
+            <p class="food-details"><strong>₹75</strong></p>
+            <div class="rating">
+                &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)
+            </div>
+            
+            <button class="btn-add-to-cart">Add to Cart</button>
         </div>
-      </div>
     </div>
-    <!-- Food Item 2 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="aloodum.jpg" class="card-img-top" alt="Aloo Dum">
-        <div class="card-body text-center">
-          <h5 class="card-title">Home Style Aloo Dum</h5>
-          <p class="card-text">Dum Aloo in home style gravy</p>
-          <p class="card-text"><strong>₹60</strong></p>
-          <button class="btn btn-warning">Add to Cart</button>
-          <p class="text-muted mt-2">★ 4.6</p>
+
+    <!-- Food Card 2 -->
+    <div class="food-card">
+        <img src="aloodum.jpg" alt="Aloo Dum">
+        <div class="food-card-body">
+            <h5 class="food-title">Home Style Aloo Dum</h5>
+            <p class="food-details">Dum Aloo in home style gravy</p>
+            <p class="food-details"><strong>₹80</strong></p>
+            <div class="rating">
+                &#9733;&#9733;&#9733;&#9733;&#9733; (5/5)
+            </div>
+            <button class="btn-add-to-cart">Add to Cart</button>
         </div>
-      </div>
     </div>
-    <!-- Food Item 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="mixveg.jpg" class="card-img-top" alt="Mixed Veg">
-        <div class="card-body text-center">
-          <h5 class="card-title">Mixed Veg Everyday Thali</h5>
-          <p class="card-text">Mixed Veg + Butter Naan + Jeera Rice + Daal Makhni + Raita + Salad + Sweet</p>
-          <p class="card-text"><strong>₹90</strong></p>
-          <button class="btn btn-warning">Add to Cart</button>
-          <p class="text-muted mt-2">★ 4.7</p>
+
+    <!-- Food Card 3 -->
+    <div class="food-card">
+        <img src="mixveg.jpg" alt="Mixed Veg">
+        <div class="food-card-body">
+            <h5 class="food-title">Mixed Veg Everyday Thali</h5>
+            <p class="food-details">Mixed Veg + Butter Naan + Jeera Rice + Daal Makhni + Raita + Salad + Sweet</p>
+            <p class="food-details"><strong>₹90</strong></p>
+            <div class="rating">
+                &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)
+            </div>
+            <button class="btn-add-to-cart">Add to Cart</button>
         </div>
-      </div>
     </div>
-    <!-- Food Item 4 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="matarpaneer.jpg" class="card-img-top" alt="Matar Paneer">
-        <div class="card-body text-center">
-          <h5 class="card-title">Mom's Matar Paneer Thali</h5>
-          <p class="card-text">Matar Paneer + Butter Naan + Jeera Rice + Daal Makhni + Raita + Salad + Sweet</p>
-          <p class="card-text"><strong>₹100</strong></p>
-          <button class="btn btn-warning">Add to Cart</button>
-          <p class="text-muted mt-2">★ 4.9</p>
+
+    <!-- Food Card 4 -->
+    <div class="food-card">
+        <img src="matarpaneer.jpg" alt="Spaghetti Carbonara">
+        <div class="food-card-body">
+            <h5 class="food-title">Mom's Matar Paneer Thali</h5>
+            <p class="food-details">Matar Paneer + Butter Naan + Jeera Rice + Daal Makhni + Raita + Salad + Sweet</p>
+            <p class="food-details"><strong>₹100</strong></p>
+            <div class="rating">
+                &#9733;&#9733;&#9733;&#9733;&#9733; (5/5)
+            </div>
+            <button class="btn-add-to-cart">Add to Cart</button>
         </div>
-      </div>
     </div>
-  </div>
+
+    <!-- Add more food items here... -->
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<footer>
+    <div class="footer-content">
+        <p><a href="#" class="logo">
+            <div class="logo-icon">DK</div>
+        </a>&copy; 2024. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
 </html>

@@ -1,3 +1,3 @@
 # ESD
 <br>
-<h2>This contains all Enterprise Software Development course related projects.</h2>
+<h2>This repo contains Enterprise Software Development course projects.</h2>
